@@ -1,0 +1,119 @@
+/* ✅ GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ PAGE CONTAINER RESPONSIVE */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ QR CARD RESPONSIVE */
+.qr-card {
+  background: white;
+  
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  max-width: 90%;
+}
+
+/*  INPUT RESPONSIVE */
+.responsive-input {
+  width: 320px;
+  max-width: 90%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* ✅ TEXT RESPONSIVE */
+.responsive-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ✅ WHATAPP WATER BUBBLE */
+.whats-app {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  background: radial-gradient(circle at 30% 30%, #7fffc8, #21f333);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 8px 20px rgba(33, 243, 107, 0.6);
+  z-index: 100;
+  line-height: 55px;
+}
+
+/* ✅ WATER WAVES */
+.whats-app::before,
+.whats-app::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background: radial-gradient(circle, rgba(127, 255, 170, 0.6), rgba(33, 243, 149, 0.2));
+  border-radius: 50%;
+  z-index: -1;
+  animation: waterWave 2s infinite;
+}
+
+.whats-app::after {
+  animation-delay: 0.8s;
+}
+
+.my-float {
+  margin-top: 13px;
+}
+
+/*  WATER ANIMATION */
+@keyframes waterWave {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+/* MOBILE SCREEN */
+@media (max-width: 600px) {
+  .responsive-title {
+    font-size: 20px;
+  }
+
+  .responsive-input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .qr-card {
+    padding: 12px;
+  }
+
+  .whats-app {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    line-height: 50px;
+  }
+}
+
+/*  TABLET SCREENS */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .responsive-title {
+    font-size: 22px;
+  }
+}
