@@ -117,3 +117,17 @@ body {
     font-size: 22px;
   }
 }
+/* Tablet */
+@media (min-width: 768px) {
+  /* adjust paddings, font-size, layout */
+}
+
+/* Small Laptop */
+@media (min-width: 1024px) {
+  /* 2 or 3 column layout */
+}
+
+/* Big Laptop / Desktop */
+@media (min-width: 1280px) {
+  /* increase spacing, bigger fonts */
+}
