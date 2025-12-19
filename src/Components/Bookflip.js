@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import bgImage from '../assets/bg.jpg';
+
 
 const BookFlipBrochure = () => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -201,7 +203,8 @@ const BookFlipBrochure = () => {
 const styles = {
     container: {
         minHeight: '100vh',
-        backgroundImage: 'url(/magical-winter-landscape.jpg)',
+        backgroundImage: `url(${bgImage})`,
+
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
