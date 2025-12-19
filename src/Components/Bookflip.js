@@ -97,7 +97,7 @@ const BookFlipBrochure = () => {
                             opacity: flake.opacity
                         }}
                     >
-                           ★
+                           
                     </div>
                 ))}
             </div>
