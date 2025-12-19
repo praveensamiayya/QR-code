@@ -31,7 +31,7 @@ function Qr() {
       fontFamily: "Arial"
     }}>
       
-      <h2>QR Code Generator</h2>
+      <h2>Q Code Generator</h2>
 
       <input
         type="text"
