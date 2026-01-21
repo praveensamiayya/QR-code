@@ -8,11 +8,11 @@ const BookFlipBrochure = () => {
     const [snowflakes, setSnowflakes] = useState([]);
 
     const pages = [
-        {
-            title: "Welcome",
-            content: "Welcome sanjai",
-            gradient: "linear-gradient(135deg, #a855f7, #ec4899)"
-        },
+        // {
+        //     title: "Welcome",
+        //     content: "Welcome sanjai",
+        //     gradient: "linear-gradient(135deg, #a855f7, #ec4899)"
+        // },
         {
             title: "Our Vision",
             content: "how was your day",
